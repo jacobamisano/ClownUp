@@ -21,3 +21,14 @@ export function validateNewADTData(elements, newElement) {
     return null;
   }
 }
+
+export function areEquivalentArrays(first, second) {
+  if (first.length == second.length) {
+    for (let i = 0; i < first.length; i++) {
+      if (first[i] !== second[i]){
+        return false;
+      }
+    }
+    return true;
+  } 
+}
