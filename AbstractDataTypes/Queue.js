@@ -1,4 +1,4 @@
-class Queue {
+export class Queue {
   constructor () {
     this.elements = [];
     this.head = 0;
@@ -11,8 +11,8 @@ class Queue {
   }
 
   dequeue() {
-    const element = this.elements[head];
-    delete this.elements[head];
+    const element = this.elements[this.head];
+    delete this.elements[this.head];
     this.head++;
     return element;
   }
