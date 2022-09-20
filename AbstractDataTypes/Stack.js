@@ -1,5 +1,5 @@
 import {validateNewData} from 'ADTHelper.js'
-class Stack {
+export class Stack {
   constructor () {
     this.elements = [];
     this.tail = 0;
