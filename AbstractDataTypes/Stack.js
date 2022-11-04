@@ -1,4 +1,4 @@
-import {validateNewData} from 'ADTHelper.js'
+import { validateNewADTData } from './ADTHelper.js'
 export class Stack {
   constructor () {
     this.elements = [];
@@ -6,14 +6,14 @@ export class Stack {
   }
 
   add(element){
-    validateNewData(this.elements, element)
-    this.elements[tail] = element;
+    validateNewADTData(this.elements, element);
+    this.elements[this.tail] = element;
     this.tail++;
   }
 
   pop() {
-    element = this.elements[tail];
-    delete this.elements[tail];
+    const element = this.elements[this.tail];
+    delete this.elements[this.tail];
     return element;
   }
 }
