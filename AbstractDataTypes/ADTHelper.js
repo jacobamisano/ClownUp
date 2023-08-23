@@ -1,4 +1,4 @@
-import {assert} from '../Errors/Assert.js'
+import {assert} from '../ErrorHandling/Assert.js'
 export function validateExistingADT(elements) {
   if (elements.length >= 0){
     const type = typeof elements[0];

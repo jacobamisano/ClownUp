@@ -1,7 +1,7 @@
 import { describe, test } from '@jest/globals';
 import { validateNewADTData, validateExistingADT } from '../AbstractDataTypes/ADTHelper.js'
-import {assert} from '../Errors/Assert.js'
-import {NotEquivalentException} from '../Errors/Assert.js';
+import {assert} from '../ErrorHandling/Assert.js'
+import {NotEquivalentException} from '../ErrorHandling/Assert.js';
 
 describe('validateNewADTData Tests', () => {
   test('validateNewADTData with correct data', () => {
